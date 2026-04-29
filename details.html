@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+    rel="stylesheet"
+    />
+    <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- header start -->
+    <header>
+        <nav class="navbar">
+        <h2 class="logo">PORSCHE</h2>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Models</a>
+            <a href="#">Comparison</a>
+            <a href="#">Brochures</a>
+            <a href="#">about us</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="nav-icons">
+            <a href="#"><i class="ri-user-line"></i></a>
+            <a href="#"><i class="ri-search-line"></i></a>
+            <a href="#"><i class="ri-toggle-line"></i></a>
+        </div>
+
+        <div class="toggle" onclick="openNav()">
+                <i class="ri-menu-line"></i>
+        </div>
+
+    </nav>
+
+    <div id="mySidenav" class="sidenav">
+        <div class="side-padd">
+            <div class="side-logo">
+                <h2 class="slogo">PORSCHE</h2>
+                <a href="javascript:void(0)" class="closebtn " onclick="closeNav()">&times;</a>
+            </div>
+            <div class="side-menu ">
+                <a href="#">Home</a>
+                <a href="#">Models</a>
+                <a href="#">Comparison</a>
+                <a href="#">Brochures</a>
+            </div>
+            <div class="side-icons">
+                <a href="#"><i class="ri-user-line"></i></a>
+                <a href="#"><i class="ri-search-line"></i></a>
+                <a href="#"><i class="ri-toggle-line"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="overlay" onclick="closeNav()"></div>
+        
+
+    <div class="head">
+        <div class="head-content">
+            <h1 id ="car-name">Porsche 911</h1>
+            <p id="car-description">Powerful elegance, timeless performance, pure prestige.</p>
+        </div>
+        <img id="main-car-image" src="images/p911.png" alt="">
+    </div>
+    
+    </header>
+    <!-- header end -->
+
+    <!-- Specifications start -->
+    <section class="specs">
+        <div class="title">
+            <h2>Specifications</h2>
+        </div>
+        
+        <table class="specs-table">
+            <tr>
+                <th>Specification</th>
+                <th>Value</th>
+            </tr>
+
+            <tr>
+                <td>Horsepower (hp)</td>
+                <td id="horsepower">385 hp</td>
+            </tr>
+
+            <tr>
+                <td>Max Power (Top trims)</td>
+                <td id="max-power">640</td>
+            </tr>
+
+            <tr>
+                <td>0-100 Km/h</td>
+                <td id="acceleration">4.2 sec</td>
+            </tr>
+
+            <tr>
+                <td>Top Speed/h</td>
+                <td id="top-speed">293 Km/h</td>
+            </tr>
+
+            <tr>
+                <td>Range/Tank</td>
+                <td id="range">~500 Km</td>
+            </tr>
+            <tr>
+                <td>Efficiency</td>
+                <td id="efficiency">~9L/100 Km</td>
+            </tr>
+            <tr>
+                <td>Seating</td>
+                <td id="seating">2+2</td>
+            </tr>
+            <tr>
+                <td>Trunk Space</td>
+                <td id="trunk">132 L</td>
+            </tr>
+        </table>
+    </section>
+    <!-- Specifications end -->
+
+    <!-- gallery start 
+    <section class="gallery-section">
+        <div class="small-gallery-section">
+            <div class="title">
+                <h2>Visual Showcase</h2>
+            </div>
+
+            <div class="slider">
+
+                <div>
+                    <button class="prev" onclick="changeSlide(-1)">❮</button>
+                </div>
+                
+                <div class="slides">
+                    <img id="img1" src="porsche 911/front.png" class="slide active" alt="Front View">
+                    <img id="img2" src="porsche 911/inside.png" class="slide" alt="Interior">
+                    <img id="img3" src="porsche 911/side.png" class="slide" alt="Side Profile">
+                    <img id="img4" src="porsche 911/back.png" class="slide" alt="Back View">
+                </div>
+
+                <div>
+                    <button class="next" onclick="changeSlide(1)">❯</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    Gallery end -->
+
+    <!-- video satrt -->
+    <section class="video-section">
+        <div class="title">
+            <h2>Experience the Drive</h2>
+        </div>
+
+        <div class="video-container">
+            <video autoplay controls muted loop id="carvideo">
+                <source src="images/p911.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>
+    <!-- video end -->
+
+    <!-- Features start -->
+    <section class="features">
+        <div class="title">
+            <h2>Features</h2>
+        </div>
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-head">
+                    <div class="icon">⚡</div>
+                    <h2 id="feature1-title" >Twin-Turbo Power</h2>
+                </div>
+                <p id="feature1-text">High-performance flat-six twin-turbo engine delivering thrilling acceleration and unmatched driving excitement.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-head">
+                    <div class="icon">⏱</div>
+                    <h2 id="feature2-title">Instant Acceleration</h2>
+                </div>
+                <p id="feature2-text">Accelerates from 0–100 km/h in just 3.4 seconds for pure adrenaline on every drive.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-head">
+                    <div class="icon">✨</div>
+                    <h2 id="feature3-title">Premium Interior</h2>
+                </div>
+                <p id="feature3-text">Luxury leather finishes, digital cockpit displays, and advanced comfort technology throughout.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-head">
+                    <div class="icon">🛞</div>
+                    <h2 id="feature4-title">Smart Suspension</h2>
+                </div>
+                <p id="feature4-text">Adaptive suspension system ensures maximum comfort and razor-sharp handling at every speed.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-head">
+                    <div class="icon">🛡</div>
+                    <h2 id="feature5-title">Intelligent Safety</h2>
+                </div>
+                <p id="feature5-text">Lane assist, adaptive cruise control, parking sensors, and advanced driver protection systems.</p>
+            </div>
+
+            <div class="card">
+                <div class="card-head">
+                    <div class="icon">🎵</div>
+                    <h2 id="feature6-title">Sport Exhaust Sound</h2>
+                </div>
+                <p id="feature6-text">Experience the signature Porsche exhaust note engineered to deliver pure emotion and thrilling performance.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Features end -->
+
+    <!-- footer start -->
+        <footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+            <h2>PORSCHE</h2>
+            <p>Driven by Passion. Engineered for Excellence.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Models</a></li>
+                <li><a href="#">Comparison</a></li>
+                <li><a href="#">Brochures</a></li>
+                <li><a href="#">about us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+    <div class="footer-social">
+        <h3>Follow Us</h3>
+        <div class="icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 Porsche. All Rights Reserved by our team.</p>
+    </div>
+
+</footer>
+    <!-- footer end -->
+
+
+
+    <script src="details.js"></script>
+</body>
+</html>

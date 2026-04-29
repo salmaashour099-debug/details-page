@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .models-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 60px 20px;
+    background: #20100E;
+}
+
+.model-btn {
+    text-decoration: none;
+    color: white;
+    border: 2px solid #B7622C;
+    padding: 15px 30px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    background: transparent;
+}
+
+.model-btn:hover {
+    background: #B7622C;
+    color: white;
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(183, 98, 44, 0.2);
+}
+
+@media (max-width: 768px) {
+    .model-btn {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+}
+    </style>
+</head>
+<body>
+    <section class="models-buttons">
+
+    <a href="details.html?car=911" class="model-btn">
+        Porsche 911
+    </a>
+
+    <a href="details.html?car=taycan" class="model-btn">
+        Porsche Taycan
+    </a>
+
+    <a href="details.html?car=macan" class="model-btn">
+        Porsche Macan
+    </a>
+
+    <a href="details.html?car=panamera" class="model-btn">
+        Porsche Panamera
+    </a>
+
+</section>
+</body>
+</html>
